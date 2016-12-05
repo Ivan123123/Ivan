@@ -3,9 +3,9 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="Project2.exe"/>
+    <PROJECT value="Project1.exe"/>
     <OBJFILES value="Unit1.obj"/>
-    <RESFILES value="Project2.res"/>
+    <RESFILES value="Project1.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
@@ -29,17 +29,17 @@
     <LINKER value="ilink32"/>
     <USERDEFINES value="_DEBUG"/>
     <SYSDEFINES value="NO_STRICT;_NO_VCL;_RTLDLL;USEPACKAGES"/>
-    <MAINSOURCE value="Project2.bpf"/>
-    <INCLUDEPATH value="C:\Users\2\Desktop\Тамара4\Ivan;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="C:\Users\2\Desktop\Тамара4\Ivan;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <MAINSOURCE value="Project1.bpf"/>
+    <INCLUDEPATH value="C:\Users\2\Desktop\Тамара4;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="C:\Users\2\Desktop\Тамара4;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-IC:\Users\2\Desktop\Тамара4\Ivan -I$(BCB)\include -I$(BCB)\include\vcl 
+    <IDLCFLAGS value="-IC:\Users\2\Desktop\Тамара4 -I$(BCB)\include -I$(BCB)\include\vcl 
       -src_suffix cpp -D_DEBUG -boa"/>
-    <CFLAG1 value="-tWC -tWM- -Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y 
-      -v -vi- -c"/>
+    <CFLAG1 value="-tWC -tWM -Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v 
+      -vi- -c"/>
     <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zd"/>
@@ -49,12 +49,12 @@
   <LINKER>
     <ALLOBJ value="c0x32.obj $(PACKAGES) $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
-    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32i.lib"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mti.lib"/>
     <OTHERFILES value=""/>
   </LINKER>
   <FILELIST>
-      <FILE FILENAME="Project2.res" FORMNAME="" UNITNAME="Project2.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Project2.bpf" FORMNAME="" UNITNAME="Project2" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project1.res" FORMNAME="" UNITNAME="Project1.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project1.bpf" FORMNAME="" UNITNAME="Project1" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Unit1.cpp" FORMNAME="" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
